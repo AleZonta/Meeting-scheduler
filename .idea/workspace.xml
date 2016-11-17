@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8bc59b1d-cc7c-49d1-96a3-a01138b392e2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/200_s.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/arrow-down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/arrow-up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/changelist-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/changelist-bg_rtl.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/chooser-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/chooser_stacked-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/default-bg-reverse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/default-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/deleted-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/icon-no.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/icon-unknown.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/icon-yes.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/icon_addlink.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/icon_alert.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/icon_calendar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/icon_changelink.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/icon_clock.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/icon_deletelink.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/icon_error.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/icon_searchbox.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/icon_success.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/inline-delete-8bit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/inline-delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/inline-restore-8bit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/inline-restore.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/inline-splitter-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/nav-bg-grabber.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/nav-bg-reverse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/nav-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/selector-add.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/selector-addall.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/selector-remove.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/selector-removeall.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/selector-search.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/selector_stacked-add.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/selector_stacked-remove.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/tool-left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/tool-left_over.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/tool-right.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/tool-right_over.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/tooltag-add.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/tooltag-add_over.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/tooltag-arrowright.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/admin/tooltag-arrowright_over.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/arrow-down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/arrow-up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/changelist-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/changelist-bg_rtl.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/chooser-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/chooser_stacked-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/dead.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/default-bg-reverse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/default-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/deleted-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/icon-no.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/icon-unknown.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/icon-yes.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/icon_addlink.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/icon_alert.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/icon_calendar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/icon_changelink.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/icon_clock.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/icon_deletelink.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/icon_error.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/icon_searchbox.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/icon_success.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/inline-delete-8bit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/inline-delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/inline-restore-8bit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/inline-restore.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/inline-splitter-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/move_vertex_off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/move_vertex_on.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/nav-bg-grabber.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/nav-bg-reverse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/nav-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/selector-add.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/selector-addall.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/selector-remove.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/selector-removeall.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/selector-search.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/selector_stacked-add.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/selector_stacked-remove.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/tool-left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/tool-left_over.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/tool-right.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/tool-right_over.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/tooltag-add.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/tooltag-add_over.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/tooltag-arrowright.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/img/tooltag-arrowright_over.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static/instruction/static/FirstSlide.ppt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static/instruction/static/evaluation_forms/Criterion4.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static/instruction/static/evaluation_forms/Criterion4_FORM.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static/instruction/static/evaluation_forms/Evaluation_form.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static/instruction/static/evaluation_forms/Evaluation_form_digital.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static/introduction/static/WAI_manifesto.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/generate/generate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/generate/mondays.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/generate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/css/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/css/changelists.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/css/dashboard.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/css/forms.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/css/ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/css/rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/css/widgets.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/LICENSE-JQUERY.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/SelectBox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/SelectFilter2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/actions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/actions.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/admin/DateTimeShortcuts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/admin/RelatedObjectLookups.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/admin/ordering.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/collapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/collapse.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/compress.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/dateparse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/getElementsBySelector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/inlines.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/inlines.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/jquery.init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/prepopulate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/prepopulate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/timeparse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/static/js/urlify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static/instruction/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static/instruction/static/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static/introduction/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static/introduction/static/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wai/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wai/wsgi.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/apache.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deprec/google_export.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django.wsgi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/settings-remote.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wai/scheduler/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wai/scheduler/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wai/scheduler/migrations/0002_added_gone.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wai/scheduler/migrations/0003_changed_gone.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wai/scheduler/migrations/0004_update.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wai/scheduler/migrations/0005_update.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wai/scheduler/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wai/scheduler/signals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wai/scheduler/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wai/scheduler/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wai/templates/500.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/__init__.py" afterPath="$PROJECT_DIR$/scheduler/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/emailsettings.py" afterPath="$PROJECT_DIR$/scheduler/emailsettings.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/scheduler/__init__.py" afterPath="$PROJECT_DIR$/scheduler/generate/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/scheduler/mailHelper.py" afterPath="$PROJECT_DIR$/scheduler/mailHelper.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/scheduler/mailMessages.py" afterPath="$PROJECT_DIR$/scheduler/mailMessages.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/scheduler/migrations/__init__.py" afterPath="$PROJECT_DIR$/scheduler/migrations/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/base.html" afterPath="$PROJECT_DIR$/scheduler/static/base.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/base_site.html" afterPath="$PROJECT_DIR$/scheduler/static/base_site.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/group_detail.html" afterPath="$PROJECT_DIR$/scheduler/static/group_detail.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/groups.html" afterPath="$PROJECT_DIR$/scheduler/static/groups.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/index.html" afterPath="$PROJECT_DIR$/scheduler/static/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/login.html" afterPath="$PROJECT_DIR$/scheduler/static/login.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/logout.html" afterPath="$PROJECT_DIR$/scheduler/static/logout.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/mail_reminder.html" afterPath="$PROJECT_DIR$/scheduler/static/mail_reminder.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/mail_reminder.txt" afterPath="$PROJECT_DIR$/scheduler/static/mail_reminder.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/meeting.html" afterPath="$PROJECT_DIR$/scheduler/static/meeting.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/month.html" afterPath="$PROJECT_DIR$/scheduler/static/month.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/presentation_detail.html" afterPath="$PROJECT_DIR$/scheduler/static/presentation_detail.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/presentations.html" afterPath="$PROJECT_DIR$/scheduler/static/presentations.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/presenter_detail.html" afterPath="$PROJECT_DIR$/scheduler/static/presenter_detail.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/presenters.html" afterPath="$PROJECT_DIR$/scheduler/static/presenters.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/presenters_by_group.html" afterPath="$PROJECT_DIR$/scheduler/static/presenters_by_group.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/schedule_year.html" afterPath="$PROJECT_DIR$/scheduler/static/schedule_year.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/schedules.html" afterPath="$PROJECT_DIR$/scheduler/static/schedules.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/send_announce.html" afterPath="$PROJECT_DIR$/scheduler/static/send_announce.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/send_request.html" afterPath="$PROJECT_DIR$/scheduler/static/send_request.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wai/templates/wai/year.html" afterPath="$PROJECT_DIR$/scheduler/static/year.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/waibase.db" afterPath="$PROJECT_DIR$/waibase.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wai/__init__.py" afterPath="$PROJECT_DIR$/wai/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wai/urls.py" afterPath="$PROJECT_DIR$/wai/urls.py" />
+    </list>
+    <ignored path="Meeting-scheduler.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Meeting-scheduler" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scheduler/generate/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/migrations/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wai/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1920" />
+    <option name="y" value="-88" />
+    <option name="width" value="1920" />
+    <option name="height" value="1054" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meeting-scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meeting-scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meeting-scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/scheduler" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Meeting-scheduler" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Meeting-scheduler" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Meeting-scheduler" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Meeting-scheduler" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Meeting-scheduler" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Meeting-scheduler" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Meeting-scheduler" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bc59b1d-cc7c-49d1-96a3-a01138b392e2" name="Default" comment="" />
+      <created>1479385138232</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1479385138232</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1920" y="-88" width="1920" height="1054" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/conf/apache.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings-remote.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/generate/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wai/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django.wsgi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

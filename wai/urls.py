@@ -1,28 +1,23 @@
-from django.conf.urls.defaults import *
+"""wai URL Configuration
 
-from django.conf import settings
-
-# Enable the admin
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/1.10/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  url(r'^$', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  url(r'^$', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.conf.urls import url, include
+    2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
+"""
+from django.conf.urls import include, url
 from django.contrib import admin
-admin.autodiscover()
 
-# Register to databrowse
-#from django.contrib import databrowse
-#from wai.scheduler.models import Group,Presenter,Room,Meeting,Presentation
-#databrowse.site.register(Meeting)
-#databrowse.site.register(Presentation)
-#databrowse.site.register(Presenter)
-#databrowse.site.register(Group)
-#databrowse.site.register(Room)
-
-from django.contrib.auth.views import login, logout
-
-urlpatterns = patterns('',
-	(r'^$', 'wai.scheduler.views.index'),
-	(r'^page/', include('wai.scheduler.urls')),
-#	(r'^browse/(.*)', databrowse.site.root),
-	(r'^admin/(.*)', admin.site.root),
-	(r'^accounts/login/$', login, {'template_name': 'wai/login.html'}),
-	(r'^accounts/logout/$', logout, {'template_name': 'wai/logout.html'}),
-	(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT})
-)
+urlpatterns = [
+    url(r'^$', include('static.urls')),
+    url(r'^admin/', admin.site.urls),
+    url(r'^schedule/', include('scheduler.urls')),
+]
