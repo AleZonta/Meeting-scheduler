@@ -4,3 +4,5 @@ media
 *.pyc
 wai/scheduler/*.pyc
 waibase.db
+
+*.xml
