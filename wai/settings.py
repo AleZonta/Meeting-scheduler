@@ -24,7 +24,7 @@ SECRET_KEY = '72&fh(q&-zz7a%1p$^&s!xq#qzf8y)&_d7xucg+k-t)bz(8zob'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pvsge014.labs.vu.nl']
 
 # Application definition
 
@@ -114,10 +114,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(os.path.dirname(__file__), '../static/static/introduction/').replace('\\', '/'),
-                    os.path.join(os.path.dirname(__file__), '../static/static/instruction/').replace('\\', '/'),
-                    os.path.join(os.path.dirname(__file__), '../scheduler/static/static/css/').replace('\\', '/'),
-                    os.path.join(os.path.dirname(__file__), '../scheduler/static/static/js/').replace('\\', '/'),
-                    os.path.join(os.path.dirname(__file__), '../scheduler/static/static/img/').replace('\\', '/')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, '/static/static/introduction/').replace('\\', '/'),
+                    os.path.join(BASE_DIR, '/static/static/instruction/').replace('\\', '/'),
+                    os.path.join(BASE_DIR, '/scheduler/static/static/css/').replace('\\', '/'),
+                    os.path.join(BASE_DIR, '/scheduler/static/static/js/').replace('\\', '/'),
+                    os.path.join(BASE_DIR, '/scheduler/static/static/img/').replace('\\', '/')]
 
 LOGIN_REDIRECT_URL = "/schedule"
