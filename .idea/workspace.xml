@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bc59b1d-cc7c-49d1-96a3-a01138b392e2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/static/introduction/static/bootstrap.min.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/__init__.py" afterPath="$PROJECT_DIR$/info/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/admin.py" afterPath="$PROJECT_DIR$/info/admin.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/apps.py" afterPath="$PROJECT_DIR$/info/apps.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/bootstrap.min.css" afterPath="$PROJECT_DIR$/info/info/instruction/static/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/migrations/__init__.py" afterPath="$PROJECT_DIR$/info/migrations/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/models.py" afterPath="$PROJECT_DIR$/info/models.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/static/index.html" afterPath="$PROJECT_DIR$/info/info/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/static/instruction/index.html" afterPath="$PROJECT_DIR$/info/info/instruction/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/static/instruction/static/FirstSlide.ppt" afterPath="$PROJECT_DIR$/info/info/instruction/static/FirstSlide.ppt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/static/instruction/static/bootstrap.min.css" afterPath="$PROJECT_DIR$/info/info/introduction/static/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/static/instruction/static/evaluation_forms/Criterion4.doc" afterPath="$PROJECT_DIR$/info/info/instruction/static/evaluation_forms/Criterion4.doc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/static/instruction/static/evaluation_forms/Criterion4_FORM.docx" afterPath="$PROJECT_DIR$/info/info/instruction/static/evaluation_forms/Criterion4_FORM.docx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/static/instruction/static/evaluation_forms/Evaluation_form.pdf" afterPath="$PROJECT_DIR$/info/info/instruction/static/evaluation_forms/Evaluation_form.pdf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/static/instruction/static/evaluation_forms/Evaluation_form_digital.docx" afterPath="$PROJECT_DIR$/info/info/instruction/static/evaluation_forms/Evaluation_form_digital.docx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/static/introduction/index.html" afterPath="$PROJECT_DIR$/info/info/introduction/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/static/introduction/static/WAI_manifesto.docx" afterPath="$PROJECT_DIR$/info/info/introduction/static/WAI_manifesto.docx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/tests.py" afterPath="$PROJECT_DIR$/info/tests.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/urls.py" afterPath="$PROJECT_DIR$/info/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scheduler/mailMessages.py" afterPath="$PROJECT_DIR$/scheduler/mailMessages.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scheduler/urls.py" afterPath="$PROJECT_DIR$/scheduler/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wai/settings.py" afterPath="$PROJECT_DIR$/wai/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wai/urls.py" afterPath="$PROJECT_DIR$/wai/urls.py" />
     </list>
     <ignored path="Meeting-scheduler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,17 +22,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wai/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="739">
-              <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
+            <state relative-caret-position="814">
+              <caret line="121" column="44" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/info/info/instruction/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
@@ -78,8 +55,8 @@
         <option value="$PROJECT_DIR$/static/urls.py" />
         <option value="$PROJECT_DIR$/static/static/instruction/index.html" />
         <option value="$PROJECT_DIR$/static/static/introduction/index.html" />
-        <option value="$PROJECT_DIR$/wai/settings.py" />
         <option value="$PROJECT_DIR$/info/info/instruction/index.html" />
+        <option value="$PROJECT_DIR$/wai/settings.py" />
       </list>
     </option>
   </component>
@@ -177,102 +154,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="info" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meeting-scheduler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meeting-scheduler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="info" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="info" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="introduction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meeting-scheduler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meeting-scheduler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="info" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="info" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="introduction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meeting-scheduler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meeting-scheduler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="info" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="info" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="instruction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meeting-scheduler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meeting-scheduler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="info" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="info" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="instruction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -750,18 +631,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wai/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/info/info/instruction/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wai/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="121" column="44" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
           <folding />
         </state>
       </provider>
