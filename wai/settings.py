@@ -115,10 +115,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'info/info/introduction/').replace('\\', '/'),
-                    os.path.join(BASE_DIR, 'info/info/instruction/').replace('\\', '/'),
-                    os.path.join(BASE_DIR, 'scheduler/info/info/css/').replace('\\', '/'),
-                    os.path.join(BASE_DIR, 'scheduler/info/info/js/').replace('\\', '/'),
-                    os.path.join(BASE_DIR, 'scheduler/info/info/img/').replace('\\', '/')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, '../info/info/introduction/').replace('\\', '/'),
+                    os.path.join(BASE_DIR, '../info/info/instruction/').replace('\\', '/'),
+                    os.path.join(BASE_DIR, '../scheduler/info/info/css/').replace('\\', '/'),
+                    os.path.join(BASE_DIR, '../scheduler/info/info/js/').replace('\\', '/'),
+                    os.path.join(BASE_DIR, '../scheduler/info/info/img/').replace('\\', '/')]
 
 LOGIN_REDIRECT_URL = "/schedule"
