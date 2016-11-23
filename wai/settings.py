@@ -53,8 +53,8 @@ ROOT_URLCONF = 'wai.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(os.path.dirname(__file__), '../static/static/').replace('\\', '/'),
-                 os.path.join(os.path.dirname(__file__), '../scheduler/static/').replace('\\', '/')],
+        'DIRS': [os.path.join(os.path.dirname(__file__), '../info/info/').replace('\\', '/'),
+                 os.path.join(os.path.dirname(__file__), '../scheduler/info/').replace('\\', '/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -114,11 +114,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, '/static/static/introduction/').replace('\\', '/'),
-                    os.path.join(BASE_DIR, '/static/static/instruction/').replace('\\', '/'),
-                    os.path.join(BASE_DIR, '/scheduler/static/static/css/').replace('\\', '/'),
-                    os.path.join(BASE_DIR, '/scheduler/static/static/js/').replace('\\', '/'),
-                    os.path.join(BASE_DIR, '/scheduler/static/static/img/').replace('\\', '/'),
-                    BASE_DIR]
+STATIC_ROOT = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, '/info/info/introduction/').replace('\\', '/'),
+                    os.path.join(BASE_DIR, '/info/info/instruction/').replace('\\', '/'),
+                    os.path.join(BASE_DIR, '/scheduler/info/info/css/').replace('\\', '/'),
+                    os.path.join(BASE_DIR, '/scheduler/info/info/js/').replace('\\', '/'),
+                    os.path.join(BASE_DIR, '/scheduler/info/info/img/').replace('\\', '/')]
 
 LOGIN_REDIRECT_URL = "/schedule"

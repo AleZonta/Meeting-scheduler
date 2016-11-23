@@ -22,7 +22,7 @@ def getRequestMessage(presenters, date, footer):
 
     message += "Your presentation is scheduled for %s at 16:00.\n" % date
     message += "Please send us the title and the abstract of your talk as soon as possible, not later than the Wednesday before the presentation, so we can send the announcement to the list.\n"
-    message += "If you are unfamiliar with the WAI, please visit our <a href = 'http://wai.few.vu.nl/static/introduction'>introduction page</a>.\n"
+    message += "If you are unfamiliar with the WAI, please visit our <a href = 'http://wai.few.vu.nl/info/introduction'>introduction page</a>.\n"
 
     message += "<br><br>\n"
 
@@ -51,7 +51,7 @@ def getRequestMessage(presenters, date, footer):
     message += "<li> The point of the WAI is to let your colleagues know what you're doing, not to give an in-depth lecture about certain algorithms or theories. Keep your presentation limited to things that are relevant to understand the main point of your talk, and accessible to the general AI public.</li>\n"
     message += "<li> The presenter is responsible to timing his/her presentation and for managing discussions. Feel free to cut people short if their questions are irrelevant or if you do not have time to answer them. It's your show, and we are only responsible for stopping it after 30 minutes.</li>\n"
     message += "</ul><br>\n"
-    message += "For more extensive instructions, please visit our <a href = 'http://wai.few.vu.nl/static/instruction'>instruction page</a>.\n"
+    message += "For more extensive instructions, please visit our <a href = 'http://wai.few.vu.nl/info/instruction'>instruction page</a>.\n"
 
     message += footer
     return message

@@ -53,5 +53,5 @@ urlpatterns = [
     # url(r'^admin/(.*)', admin.site.root),
     # url(r'^accounts/login/$', login, {'template_name': 'wai/login.html'}),
     # url(r'^accounts/logout/$', logout, {'template_name': 'wai/logout.html'}),
-    # url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT})
+    # url(r'^media/(?P<path>.*)$', 'django.views.info.serve', {'document_root': settings.MEDIA_ROOT})
 ]
