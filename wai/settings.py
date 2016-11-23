@@ -118,6 +118,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, '/static/static/introduction/').repla
                     os.path.join(BASE_DIR, '/static/static/instruction/').replace('\\', '/'),
                     os.path.join(BASE_DIR, '/scheduler/static/static/css/').replace('\\', '/'),
                     os.path.join(BASE_DIR, '/scheduler/static/static/js/').replace('\\', '/'),
-                    os.path.join(BASE_DIR, '/scheduler/static/static/img/').replace('\\', '/')]
+                    os.path.join(BASE_DIR, '/scheduler/static/static/img/').replace('\\', '/'),
+                    BASE_DIR]
 
 LOGIN_REDIRECT_URL = "/schedule"
