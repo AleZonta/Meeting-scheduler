@@ -54,7 +54,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(os.path.dirname(__file__), '../info/info/').replace('\\', '/'),
-                 os.path.join(os.path.dirname(__file__), '../scheduler/info/').replace('\\', '/')],
+                 os.path.join(os.path.dirname(__file__), '../scheduler/static/').replace('\\', '/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

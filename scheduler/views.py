@@ -1,5 +1,5 @@
 import operator
-
+import vobject
 from dateutil.tz import gettz
 
 from django.http import HttpResponse
@@ -179,7 +179,7 @@ def schedule_ics(request):
         vevent.add('description').value = text
 
     icalstream = cal.serialize()
-    response = HttpResponse(icalstream, mimetype='text/calendar')
+    response = HttpResponse(icalstream, content_type='text/calendar')
     response['Filename'] = 'export.ics'  # IE needs this
     response['Content-Disposition'] = 'attachment; filename=export.ics'
 
