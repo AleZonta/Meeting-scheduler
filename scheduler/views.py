@@ -200,6 +200,9 @@ def raw_mails(request):
 def send_announce(request):
     from mailMessages import getAnnounceMessage, getAnnounceSubject
     from mailHelper import mailWai
+    from emailsettings import helper
+
+    help = helper()
 
     # Code for the auto-mailer
     if type(request) == str:
@@ -217,44 +220,35 @@ def send_announce(request):
             presenters.append(presenter)
             presenter_email.append(pres.presenter.email)
         message = getAnnounceMessage(meeting.date.strftime("%d %B %Y"), meeting.location.name, presenters,
-                                     settings.EMAIL_FOOTER)
-        mailWai(subject, message, settings.EMAIL_SENDER, settings.EMAIL_ANOUNCEMENT_RECIPIENTS, presenter_email)
+                                     help.EMAIL_FOOTER())
+        mailWai(subject, message, help.EMAIL_SENDER(), help.EMAIL_ANOUNCEMENT_RECIPIENTS(), presenter_email)
 
     # Code for the website mailing buttons
     else:
-        if request.method == 'POST':  # If the form has been submitted...
-            form = SendAnnounceForm(request.POST)  # A form bound to the POST data
-            if form.is_valid():  # All validation rules pass
-                mailWai(form.cleaned_data['subject'], form.cleaned_data['message'], settings.EMAIL_SENDER,
-                        settings.EMAIL_ANOUNCEMENT_RECIPIENTS)
-                return HttpResponseRedirect("/page/schedule")  # Redirect after POST
-        else:
-            meeting = get_object_or_404(Meeting, date=request.GET['id'])
+        meeting = get_object_or_404(Meeting, date=request.GET['id'])
 
-            subject = getAnnounceSubject(meeting.date.strftime("%d %B %Y"), meeting.presenters(), meeting.location.name)
-            presenters = []
-            for pres in meeting.presentation_set.all():
-                presenter = {
-                    'name': pres.presenter.name,
-                    'title': pres.title,
-                    'abstract': pres.abstract
-                }
-                presenters.append(presenter)
-            message = getAnnounceMessage(meeting.date.strftime("%d %B %Y"), meeting.location.name, presenters,
-                                         settings.EMAIL_FOOTER)
-            default = {
-                'subject': subject,
-                'message': message
+        subject = "[WAI-meetings] " + getAnnounceSubject(meeting.date.strftime("%d %B %Y"), meeting.presenters(), meeting.location.name)
+        presenters = []
+        presenter_email = []
+        for pres in meeting.presentation_set.all():
+            presenter = {
+                'name': pres.presenter.name,
+                'title': pres.title,
+                'abstract': pres.abstract
             }
-            form = SendAnnounceForm(default, auto_id=False)  # An unbound form
-
-        return render_to_response('send_announce.html', {'form': form})
+            presenters.append(presenter)
+            presenter_email.append(pres.presenter.email)
+        message = getAnnounceMessage(meeting.date.strftime("%d %B %Y"), meeting.location.name, presenters,
+                                     help.EMAIL_FOOTER())
+        mailWai(subject, message, help.EMAIL_SENDER(), help.EMAIL_ANOUNCEMENT_RECIPIENTS(), presenter_email)
 
 
 def send_request(request):
     from mailMessages import getRequestMessage, getRequestSubject
     from mailHelper import mailWai
+    from emailsettings import helper
 
+    help = helper()
     # Code for the auto-mailer
     if type(request) == str:
         meeting = get_object_or_404(Meeting, date=request)
@@ -263,45 +257,32 @@ def send_request(request):
         for pres in meeting.presentation_set.all():
             a = pres.presenter.name.split(' ')
             presenters += "%s, " % a[0]
-        message = getRequestMessage(presenters, meeting.date.strftime("%d %B %Y"), settings.EMAIL_FOOTER)
+        message = getRequestMessage(presenters, meeting.date.strftime("%d %B %Y"), help.EMAIL_FOOTER)
         # cc = settings.EMAIL_REQUEST_ABSTRACT_CC
         to = []
         for pres in meeting.presentation_set.all():
             if len(pres.abstract) == 0:
                 to.append(pres.presenter.email)
         if len(to) > 0:
-            to.append(settings.EMAIL_REQUEST_ABSTRACT_CC[0])
-            mailWai(subject, message, settings.EMAIL_SENDER, to)
+            to.append(help.EMAIL_REQUEST_ABSTRACT_CC[0])
+            mailWai(subject, message, help.EMAIL_SENDER, to)
 
             # Code for the website mailing buttons
     else:
-        if request.method == 'POST':  # If the form has been submitted...
-            form = SendRequestForm(request.POST)  # A form bound to the POST data
-            if form.is_valid():
-                meeting = get_object_or_404(Meeting, date=form.cleaned_data['identifier'])
-                # cc = settings.EMAIL_REQUEST_ABSTRACT_CC
-                to = settings.EMAIL_REQUEST_ABSTRACT_CC
-                for pres in meeting.presentation_set.all():
-                    to.append(pres.presenter.email)
-                mailWai(form.cleaned_data['subject'], form.cleaned_data['message'], settings.EMAIL_SENDER, to)
-                return HttpResponseRedirect("/page/schedule")  # Redirect after POST
-        else:
-            meeting = get_object_or_404(Meeting, date=request.GET['id'])
-            subject = getRequestSubject()
+        meeting = get_object_or_404(Meeting, date=request.GET['id'])
+        subject = getRequestSubject()
 
-            presenters = ""
-            for pres in meeting.presentation_set.all():
-                a = pres.presenter.name.split(' ')
-                presenters += "%s, " % a[0]
-            message = getRequestMessage(presenters, meeting.date.strftime("%d %B %Y"), settings.EMAIL_FOOTER)
-            default = {
-                'subject': subject,
-                'message': message,
-                'identifier': request.GET['id']
-            }
-            form = SendRequestForm(default, auto_id=False)  # An unbound form
-            return render_to_response('end_request.html', {'form': form})
+        presenters = ""
+        for pres in meeting.presentation_set.all():
+            a = pres.presenter.name.split(' ')
+            presenters += "%s, " % a[0]
+        message = getRequestMessage(presenters, meeting.date.strftime("%d %B %Y"), help.EMAIL_FOOTER())
+        to = help.EMAIL_REQUEST_ABSTRACT_CC()
+        for pres in meeting.presentation_set.all():
+            to.append(pres.presenter.email)
 
+        mailWai(subject, message, help.EMAIL_SENDER(), to)
+        return HttpResponseRedirect("/page/schedule")  # Redirect after POST
 
 def generate(request):
 
