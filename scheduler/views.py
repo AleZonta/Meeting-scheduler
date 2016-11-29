@@ -264,7 +264,7 @@ def send_request(request):
             if len(pres.abstract) == 0:
                 to.append(pres.presenter.email)
         if len(to) > 0:
-            to.append(help.EMAIL_REQUEST_ABSTRACT_CC[0])
+            to.append(help.EMAIL_REQUEST_ABSTRACT_CC())
             mailWai(subject, message, help.EMAIL_SENDER, to)
 
             # Code for the website mailing buttons
