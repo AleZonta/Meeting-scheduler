@@ -283,9 +283,7 @@ def send_request(request):
         for pres in meeting.presentation_set.all():
             to.append(pres.presenter.email)
 
-        for person in to:
-            mailWai(subject, message, help.EMAIL_SENDER(), [person])
-
+        mailWai(subject, message, help.EMAIL_SENDER(), to)
 
     return HttpResponseRedirect("/page/schedule")
 

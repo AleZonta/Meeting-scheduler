@@ -9,15 +9,16 @@ class helper():
         return False
 
     def EMAIL_SENDER(self):
-        return "wai-organization@few.vu.nl"
-        # return "salvarosacity@hotmail.com"
+        # return "wai-organization@few.vu.nl"
+        return "salvarosacity@hotmail.it"
 
     def EMAIL_ANOUNCEMENT_RECIPIENTS(self):
         # return ['wai-meetings@few.vu.nl']
         return ["zohal@gmail.com"]
 
     def EMAIL_REQUEST_ABSTRACT_CC(self):
-        return ['wai-organization@few.vu.nl']
+        # return ['wai-organization@few.vu.nl']
+        return ['salvarosacity@hotmail.it']
 
     def EMAIL_FOOTER(self):
         return "Best, Amin and Alessandro"
