@@ -123,6 +123,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'info/info/introduction/').replace('\
 
 LOGIN_REDIRECT_URL = "/schedule"
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = False
 EMAIL_HOST = 'top.few.vu.nl'
 EMAIL_HOST_USER = 'wai-organization@few.vu.nl'

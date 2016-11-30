@@ -282,7 +282,7 @@ def send_request(request):
             to.append(pres.presenter.email)
 
         mailWai(subject, message, help.EMAIL_SENDER(), to)
-        return HttpResponseRedirect("/page/schedule")  # Redirect after POST
+        return HttpResponseRedirect("/page/schedule")
 
 def generate(request):
 
