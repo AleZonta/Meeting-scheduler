@@ -20,7 +20,7 @@ def strip_tags(html):
     return s.get_data()
 
 
-def mailWai(subject, message, sender, to, bcc=[], cc="", replyTo=""):
-    msg = EmailMultiAlternatives(subject, strip_tags(message), sender, to, bcc, headers={'Reply-To': replyTo, 'Cc': cc})
+def mailWai(subject, message, sender, to, bcc=[]):
+    msg = EmailMultiAlternatives(subject, strip_tags(message), sender, to, bcc)
     msg.attach_alternative(message, "text/html")
     msg.send()
