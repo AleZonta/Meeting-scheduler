@@ -125,6 +125,6 @@ LOGIN_REDIRECT_URL = "/schedule"
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = False
-EMAIL_HOST = 'top.few.vu.nl'
+EMAIL_HOST = 'localhost'
 EMAIL_HOST_USER = 'wai-organization@few.vu.nl'
 EMAIL_PORT = 25
