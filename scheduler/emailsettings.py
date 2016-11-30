@@ -17,8 +17,7 @@ class helper():
         return ["zohal@gmail.com"]
 
     def EMAIL_REQUEST_ABSTRACT_CC(self):
-        # return ['wai-organization@few.vu.nl']
-        return ["salvarosacity@hotmail.com"]
+        return ['wai-organization@few.vu.nl']
 
     def EMAIL_FOOTER(self):
         return "Best, Amin and Alessandro"

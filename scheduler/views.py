@@ -242,6 +242,8 @@ def send_announce(request):
                                      help.EMAIL_FOOTER())
         mailWai(subject, message, help.EMAIL_SENDER(), help.EMAIL_ANOUNCEMENT_RECIPIENTS(), presenter_email)
 
+    return HttpResponseRedirect("/page/schedule")
+
 
 def send_request(request):
     from mailMessages import getRequestMessage, getRequestSubject
@@ -281,9 +283,12 @@ def send_request(request):
         for pres in meeting.presentation_set.all():
             to.append(pres.presenter.email)
 
-        mailWai(subject, message, help.EMAIL_SENDER(), to)
-        return HttpResponseRedirect("/page/schedule")
+        for person in to:
+            mailWai(subject, message, help.EMAIL_SENDER(), person)
+
+            
+    return HttpResponseRedirect("/page/schedule")
+
 
 def generate(request):
-
     return render(request, 'generate.html')
