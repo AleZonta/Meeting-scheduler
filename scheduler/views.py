@@ -284,9 +284,9 @@ def send_request(request):
             to.append(pres.presenter.email)
 
         for person in to:
-            mailWai(subject, message, help.EMAIL_SENDER(), person)
+            mailWai(subject, message, help.EMAIL_SENDER(), [person])
 
-            
+
     return HttpResponseRedirect("/page/schedule")
 
 
