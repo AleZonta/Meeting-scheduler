@@ -21,7 +21,7 @@ def my_scheduled_email_sender():
     # Calculate the timediff and send email if it is the right day
     timediff_nextweek = next[0][0] - date.today()
     timediff_weekafter = next[1][0] - date.today()
-    script_logger.write(timediff_nextweek.strftime('%Y-%m-%d') + "\n")
+    script_logger.write(str(timediff_nextweek.days) + " \n")
 
     # Send the announcement on the monday
     if timediff_nextweek.days == 0:
