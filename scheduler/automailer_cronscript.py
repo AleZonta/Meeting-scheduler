@@ -5,23 +5,23 @@ from datetime import date
 
 from scheduler import views
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'  # Apparently you have to define this in this file >_>
-
-
 def my_scheduled_email_sender():
     # Open the logger file, enter first log entry
     script_logger = open('automailer_cronscript_logfile', 'a')
     script_logger.write(date.today().strftime('%Y-%m-%d') + "			Script was called \n")
 
     # Get the date when the next meeting is planned from the DB
-    con = sqlite3.connect('waibase.db', detect_types=sqlite3.PARSE_DECLTYPES)
+    con = sqlite3.connect('/var/www/wai.few.vu.nl/waibase.db', detect_types=sqlite3.PARSE_DECLTYPES)
     cur = con.cursor()
     nextDate = cur.execute('SELECT date FROM scheduler_meeting WHERE date >= DATE("now") LIMIT 2;')
     next = nextDate.fetchall()
 
+    script_logger.write("First point, connection with db successfully accomplished \n")
+
     # Calculate the timediff and send email if it is the right day
     timediff_nextweek = next[0][0] - date.today()
     timediff_weekafter = next[1][0] - date.today()
+    script_logger.write(timediff_nextweek.strftime('%Y-%m-%d') + "\n")
 
     # Send the announcement on the monday
     if timediff_nextweek.days == 0:
