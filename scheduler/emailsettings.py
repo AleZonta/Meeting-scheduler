@@ -14,7 +14,7 @@ class helper():
 
     def EMAIL_ANOUNCEMENT_RECIPIENTS(self):
         # return ['wai-meetings@few.vu.nl']
-        return ["zohal@gmail.com"]
+        return ["salvarosacity@gmail.com"]
 
     def EMAIL_REQUEST_ABSTRACT_CC(self):
         # return ['wai-organization@few.vu.nl']
