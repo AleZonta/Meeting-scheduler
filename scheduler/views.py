@@ -295,7 +295,7 @@ def send_alert(request):
     subject = getNewScheduleSubject()
 
     help = helper()
-    message = getNewScheduleMessage(help.PRESENTER_NAME(), help.EMAIL_FOOTER)
+    message = getNewScheduleMessage(help.PRESENTER_NAME(), help.EMAIL_FOOTER())
     presenter_email = []
     mailWai(subject, message, help.EMAIL_SENDER(), help.EMAIL_ANOUNCEMENT_RECIPIENTS(), presenter_email)
     return HttpResponseRedirect("/schedule")
