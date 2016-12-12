@@ -241,8 +241,7 @@ def send_announce(request):
         message = getAnnounceMessage(meeting.date.strftime("%d %B %Y"), meeting.location.name, presenters,
                                      help.EMAIL_FOOTER())
         mailWai(subject, message, help.EMAIL_SENDER(), help.EMAIL_ANOUNCEMENT_RECIPIENTS(), presenter_email)
-
-    return HttpResponseRedirect("/page/schedule")
+        return HttpResponseRedirect("/schedule/schedule")
 
 
 def send_request(request):
@@ -284,8 +283,22 @@ def send_request(request):
             to.append(pres.presenter.email)
 
         mailWai(subject, message, help.EMAIL_SENDER(), to)
+        return HttpResponseRedirect("/schedule/schedule")
 
-    return HttpResponseRedirect("/page/schedule")
+
+def send_alert(request):
+    from scheduler.mailMessages import getNewScheduleSubject, getNewScheduleMessage
+    from scheduler.mailHelper import mailWai
+
+    from emailsettings import helper
+
+    subject = getNewScheduleSubject()
+
+    help = helper()
+    message = getNewScheduleMessage(help.PRESENTER_NAME(), help.EMAIL_FOOTER)
+    presenter_email = []
+    mailWai(subject, message, help.EMAIL_SENDER(), help.EMAIL_ANOUNCEMENT_RECIPIENTS(), presenter_email)
+    return HttpResponseRedirect("/schedule/schedule")
 
 
 def generate(request):

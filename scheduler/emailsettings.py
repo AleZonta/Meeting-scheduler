@@ -22,3 +22,6 @@ class helper():
 
     def EMAIL_FOOTER(self):
         return "Best, Amin and Alessandro"
+
+    def PRESENTER_NAME(self):
+        return "me and Amin"

@@ -51,7 +51,7 @@ def getRequestMessage(presenters, date, footer):
     message += "<li> The point of the WAI is to let your colleagues know what you're doing, not to give an in-depth lecture about certain algorithms or theories. Keep your presentation limited to things that are relevant to understand the main point of your talk, and accessible to the general AI public.</li>\n"
     message += "<li> The presenter is responsible to timing his/her presentation and for managing discussions. Feel free to cut people short if their questions are irrelevant or if you do not have time to answer them. It's your show, and we are only responsible for stopping it after 30 minutes.</li>\n"
     message += "</ul><br>\n"
-    message += "For more extensive instructions, please visit our <a href = 'http://wai.few.vu.nl/info/instruction'>instruction page</a>.\n"
+    message += "For more extensive instructions, please visit our <a href = 'http://wai.few.vu.nl/wai/instruction'>instruction page</a>.\n"
 
     message += footer
     return message
@@ -59,3 +59,21 @@ def getRequestMessage(presenters, date, footer):
 
 def getRequestSubject():
     return "WAI - Presenter reminder"
+
+
+def getNewScheduleSubject():
+    return "New WAI schedule: CHECK!"
+
+
+def getNewScheduleMessage(names, footer):
+    message = "Dear Colleagues"
+
+    message += "<br><br>"
+    message += "The new WAI schedule is online now. See the <a href = 'http://pvsge014.labs.vu.nl/schedule/2017/'>WAI site</a> for information\n\n"
+    message += "<b>Check whether you are available at the time you are scheduled</b>\n\n"
+    message += "If you are not available, contact a colleague to change slots with, and let %s know so we can update the schedule. \n" % names
+
+    message += footer
+    return message
+
+

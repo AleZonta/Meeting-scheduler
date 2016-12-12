@@ -83,6 +83,12 @@
 			<a href="../../group">List of groups</a><br/>
 			<span class="mini quiet">see the speakers sorted by group</span>
 		</li>
+		{% if user.is_authenticated and user.is_staff %}
+		<li class="addlink" style="list-style-type:none;">
+			<a href="../../../../mailing/send_alert">Send Announcement</a><br/>
+			<span class="mini quiet">send the announcement for the new schedule </span>
+		</li>
+		{% endif %}
 	</ul>
 	</div>
 	<div class="module">
