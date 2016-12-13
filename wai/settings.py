@@ -25,7 +25,7 @@ SECRET_KEY = '72&fh(q&-zz7a%1p$^&s!xq#qzf8y)&_d7xucg+k-t)bz(8zob'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pvsge014.labs.vu.nl']
+ALLOWED_HOSTS = ['wai.few.vu.nl']
 
 # Application definition
 
@@ -133,5 +133,5 @@ EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 25
 
 CRONJOBS = [
-    ('*/5 * * * *', 'scheduler.automailer_cronscript.my_scheduled_email_sender')
+    ('30 15 * * *', 'scheduler.automailer_cronscript.my_scheduled_email_sender')
 ]
