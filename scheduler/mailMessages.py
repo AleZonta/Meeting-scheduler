@@ -69,7 +69,7 @@ def getNewScheduleMessage(names, footer):
     message = "Dear Colleagues"
 
     message += "<br><br>"
-    message += "The new WAI schedule is online now. See the <a href = 'http://wai.few.vu.nl/schedule/schedule/2017/'>WAI site</a> for information\n\n"
+    message += "The WAI schedule is online now. See the <a href = 'http://wai.few.vu.nl/schedule/schedule/2017/'>WAI site</a> for information\n\n"
     message += "<br>"
     message += "<b>Check whether you are available at the time you are scheduled</b>\n\n"
     message += "<br>"

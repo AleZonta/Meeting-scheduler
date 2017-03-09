@@ -1,0 +1,49 @@
+{% extends "base_site.html" %}
+
+{% block bodyclass %}dashboard{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="../">WAI</a> 
+&rsaquo;
+Groups
+</div>
+<ul class="messagelist"><li>Click on a group to get a detailled view</li></ul>
+{% endblock %}
+
+{% block coltype %}flex{% endblock %}
+
+{% block content %}
+<div id="content-main">
+	<div class="module">
+		<h2>List of all groups</h2>
+		<table style="width:100%;">
+			<thead><tr><th>Name</th><th>Number of members</th></tr></thead>
+			<tbody>
+				{% for group in group_list %}
+				<tr class="{% cycle 'row1' 'row2' %}">
+					<td><a href="{{group.id}}/">{{ group.name }}</a></td>
+					<td>{{ group.members_count}}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+	</div>
+<script type="text/javascript">
+    function fixSecond() {
+        var doc = document.getElementById("content-related");
+        if (doc == null || doc.innerText == ""){
+        	if(doc.innerText == ""){
+        		document.getElementById("content-related").parentNode.removeChild(document.getElementById("content-related"))
+        	}
+            document.getElementById('content-main').style.width = "100%";
+        }else{
+            document.getElementById('content-main').style.width = "68%";
+        }
+	}
+	window.onload = fixSecond;
+</script>
+{% endblock %}

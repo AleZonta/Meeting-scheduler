@@ -1,0 +1,52 @@
+[1mdiff --git a/scheduler/automailer_cronscript.py b/scheduler/automailer_cronscript.py[m
+[1mindex e8f7f61..12b0858 100755[m
+[1m--- a/scheduler/automailer_cronscript.py[m
+[1m+++ b/scheduler/automailer_cronscript.py[m
+[36m@@ -2,6 +2,9 @@[m
+ [m
+ import os, sqlite3[m
+ from datetime import date[m
+[32m+[m[32mfrom django.conf import settings[m
+[32m+[m[32mif not settings.configured:[m
+[32m+[m[32m    settings.configure()[m
+ [m
+ from scheduler import views[m
+ [m
+[36m@@ -16,12 +19,9 @@[m [mdef my_scheduled_email_sender():[m
+     nextDate = cur.execute('SELECT date FROM scheduler_meeting WHERE date >= DATE("now") LIMIT 2;')[m
+     next = nextDate.fetchall()[m
+ [m
+[31m-    script_logger.write("First point, connection with db successfully accomplished \n")[m
+[31m-[m
+     # Calculate the timediff and send email if it is the right day[m
+     timediff_nextweek = next[0][0] - date.today()[m
+     timediff_weekafter = next[1][0] - date.today()[m
+[31m-    script_logger.write(str(timediff_nextweek.days) + " \n")[m
+ [m
+     # Send the announcement on the monday[m
+     if timediff_nextweek.days == 0:[m
+[1mdiff --git a/scheduler/views.py b/scheduler/views.py[m
+[1mindex ba677b4..035c290 100644[m
+[1m--- a/scheduler/views.py[m
+[1m+++ b/scheduler/views.py[m
+[36m@@ -242,7 +242,7 @@[m [mdef send_announce(request):[m
+                                      help.EMAIL_FOOTER())[m
+         mailWai(subject, message, help.EMAIL_SENDER(), help.EMAIL_ANOUNCEMENT_RECIPIENTS(), presenter_email)[m
+ [m
+[31m-    return HttpResponseRedirect("/page/schedule")[m
+[32m+[m[32m        return HttpResponseRedirect("/schedule")[m
+ [m
+ [m
+ def send_request(request):[m
+[36m@@ -285,7 +285,7 @@[m [mdef send_request(request):[m
+ [m
+         mailWai(subject, message, help.EMAIL_SENDER(), to)[m
+ [m
+[31m-    return HttpResponseRedirect("/page/schedule")[m
+[32m+[m[32m        return HttpResponseRedirect("/schedule")[m
+ [m
+ [m
+ def generate(request):[m
+[1mdiff --git a/waibase.db b/waibase.db[m
+[1mindex 03bdc3f..ac9b457 100755[m
+Binary files a/waibase.db and b/waibase.db differ

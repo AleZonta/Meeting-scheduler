@@ -1,0 +1,38 @@
+{% extends "base_site.html" %}
+
+{% block bodyclass %}dashboard{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="/view">WAI</a> 
+</div>
+{% endblock %}
+
+{% block coltype %}flex{% endblock %}
+
+{% block content %}
+<h3>Subject</h3>
+{% autoescape off %}
+
+{% if form.instance.subject %}
+      {{form.instance.subject}}
+{% else %}
+      {{form.data.subject}}
+{% endif %}
+<h3>Message</h3>
+<div style="border:1px solid grey;margin: 5px;padding: 3px;">
+{% if form.instance.message %}
+      {{form.instance.message}}
+{% else %}
+      {{form.data.message}}
+{% endif %}
+</div>
+{% endautoescape %}
+<form action="/page/mailing/send_request/" method="POST">
+	{{ form.as_p }}
+	<input type="submit" value="Submit" />
+</form>
+{% endblock %}
+

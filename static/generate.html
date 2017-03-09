@@ -1,0 +1,25 @@
+{% extends "base_site.html" %}
+
+{% block bodyclass %}dashboard{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="../../">WAI</a> 
+&rsaquo;
+<a href="../">Schedule</a> 
+&rsaquo; {{ year|capfirst|escape }}
+</div>
+{% endblock %}
+
+{% block coltype %}flex{% endblock %}
+
+{% block content %}
+
+
+{% load static %}
+<img src="{% static 'static/img/dead.jpg' %}" alt="Nothing to see here... Move along" style="margin:auto;width:inherit;">
+
+
+{% endblock %}
