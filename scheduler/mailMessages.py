@@ -11,6 +11,15 @@ def getAnnounceMessage(date, location, presenters, footer):
     return message
 
 
+def getAnnounceHoliday(date, footer):
+    message = "Dear All, <br><br>"
+    message += "Monday (%s) is National Holiday, therefore no WAI presentations.<br><br>\n\n" % (
+        date)
+    message += "\n\n<br>For the list of upcoming wai talks, visit the WAI site at <a href='http://wai.few.vu.nl' target='_blank'>http://wai.few.vu.nl</a>.<br>\n";
+    message += footer
+    return message
+
+
 def getAnnounceSubject(date, presenters, locationName):
     return "WAI Monday (%s): %s (16:00 %s)" % (date, presenters, locationName)
 
@@ -73,7 +82,7 @@ def getNewScheduleMessage(names, footer):
     message += "<br>"
     message += "<b>Check whether you are available at the time you are scheduled</b>\n\n"
     message += "<br>"
-    message += "If you are not available, contact a colleague to change slots with, and let %s know so we can update the schedule. \n" % names
+    message += "If you are not available, contact a colleague to change slots with, and let %s know so I can update the schedule. \n" % names
     message += "<br><br>"
     message += footer
     return message

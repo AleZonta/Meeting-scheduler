@@ -11,7 +11,7 @@ from django.template import RequestContext
 from django.utils.datetime_safe import datetime, date
 from django.utils.http import urlquote_plus
 
-
+from scheduler.mailMessages import getAnnounceHoliday
 from scheduler.models import Meeting, Presenter, Presentation, Group, SendRequestForm, SendAnnounceForm
 from django.conf import settings
 
@@ -207,10 +207,15 @@ def send_announce(request):
     # Code for the auto-mailer
     if type(request) == str:
         meeting = get_object_or_404(Meeting, date=request)
+
         subject = "[WAI-meetings] " + getAnnounceSubject(meeting.date.strftime("%d %B %Y"), meeting.presenters(),
                                                          meeting.location.name)
         presenters = []
         presenter_email = []
+
+        # National Holiday, do nothing
+        national_holiday = False
+
         for pres in meeting.presentation_set.all():
             presenter = {
                 'name': pres.presenter.name,
@@ -219,8 +224,18 @@ def send_announce(request):
             }
             presenters.append(presenter)
             presenter_email.append(pres.presenter.email)
-        message = getAnnounceMessage(meeting.date.strftime("%d %B %Y"), meeting.location.name, presenters,
+
+            # National Holiday, do nothing
+            if pres.presenter.name.contains("Holiday"):
+                national_holiday = True
+
+        # National Holiday, do nothing
+        if national_holiday:
+            message = getAnnounceHoliday(meeting.date.strftime("%d %B %Y"), help.EMAIL_FOOTER())
+        else:
+            message = getAnnounceMessage(meeting.date.strftime("%d %B %Y"), meeting.location.name, presenters,
                                      help.EMAIL_FOOTER())
+
         mailWai(subject, message, help.EMAIL_SENDER(), help.EMAIL_ANOUNCEMENT_RECIPIENTS(), presenter_email)
 
     # Code for the website mailing buttons
@@ -254,11 +269,22 @@ def send_request(request):
     if type(request) == str:
         meeting = get_object_or_404(Meeting, date=request)
         subject = getRequestSubject()
+
+        # National Holiday, do nothing
+        national_holiday = False
+
         presenters = ""
         for pres in meeting.presentation_set.all():
+            if pres.presenter.name.contains("Holiday"):
+                national_holiday = True
             a = pres.presenter.name.split(' ')
             presenters += "%s, " % a[0]
-        message = getRequestMessage(presenters, meeting.date.strftime("%d %B %Y"), help.EMAIL_FOOTER)
+
+        # National Holiday, do nothing
+        if national_holiday:
+            return
+
+        message = getRequestMessage(presenters, meeting.date.strftime("%d %B %Y"), help.EMAIL_FOOTER())
         # cc = settings.EMAIL_REQUEST_ABSTRACT_CC
         to = []
         for pres in meeting.presentation_set.all():
