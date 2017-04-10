@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '72&fh(q&-zz7a%1p$^&s!xq#qzf8y)&_d7xucg+k-t)bz(8zob'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['wai.few.vu.nl']
 

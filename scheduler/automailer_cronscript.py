@@ -43,7 +43,8 @@ def my_scheduled_email_sender():
 
     # Resend the request to both. The function checks and stops the script if both abstracts have already been received
     if timediff_nextweek.days == 5:
-        views.send_request(next[0][0].strftime('%Y-%m-%d'))
+        script_logger.write("Wednesday -> only the function is not working\n")
+	views.send_request(next[0][0].strftime('%Y-%m-%d'))
         script_logger.write(
             date.today().strftime('%Y-%m-%d') + "			Request for abstract next week was sent \n")
 
