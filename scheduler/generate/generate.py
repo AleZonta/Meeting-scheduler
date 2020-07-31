@@ -6,6 +6,8 @@ import sqlite3
 from datetime import timedelta, date
 from random import randrange
 
+import sys
+
 
 class pres(object):
     def __init__(self, element):
@@ -22,10 +24,13 @@ class pres(object):
 
 
 class meeting():
-    def __init__(self, date, name1, name2):
+    def __init__(self, date, name1, name2=None, name3=None):
         self.date = date
         self.first_presenter = name1
-        self.second_presenter = name2
+        if name2 is not None:
+            self.second_presenter = name2
+        if name3 is not None:
+            self.third_presenter = name3
         self.location = 19  # ID for N.A.
 
 
@@ -90,23 +95,23 @@ def work():
         list_presenter.append(pres(el))
 
     # check if in the selected period there are already presenter
-    start = sqlite3.datetime.date(2017, 1, 9)
-    print(start.strftime('%Y-%m-%d'))
-    c.execute(
-        'SELECT {n},{w} FROM {c} WHERE CAST(strftime("%s", {w})  AS  integer) > CAST(strftime("%s", "{d}")  AS  integer)'.format(
-            n="presenter_id", c="scheduler_presentation", w="meeting_id", d=start.strftime('%Y-%m-%d')))
-    already_planned = c.fetchall()
-    # if the size is more than 0 I have already planned something.
-    # need to remove those presenters from the general list
-    if len(already_planned) > 0:
-        for id_pres in already_planned:
-            count = 0
-            found = False
-            while not found and count < len(list_presenter) - 1:
-                if list_presenter[count].id == id_pres[0]:
-                    found = True
-                    list_presenter.remove(list_presenter[count])
-                count += 1
+    # start = sqlite3.datetime.date(2017, 1, 9)
+    # print(start.strftime('%Y-%m-%d'))
+    # c.execute(
+    #     'SELECT {n},{w} FROM {c} WHERE CAST(strftime("%s", {w})  AS  integer) > CAST(strftime("%s", "{d}")  AS  integer)'.format(
+    #         n="presenter_id", c="scheduler_presentation", w="meeting_id", d=start.strftime('%Y-%m-%d')))
+    # already_planned = c.fetchall()
+    # # if the size is more than 0 I have already planned something.
+    # # need to remove those presenters from the general list
+    # if len(already_planned) > 0:
+    #     for id_pres in already_planned:
+    #         count = 0
+    #         found = False
+    #         while not found and count < len(list_presenter) - 1:
+    #             if list_presenter[count].id == id_pres[0]:
+    #                 found = True
+    #                 list_presenter.remove(list_presenter[count])
+    #             count += 1
 
     # now I have the real presenters that I have to organise
     # lets divide them in the group that I know
@@ -142,6 +147,7 @@ def work():
 
     if total_length < max_number_of_meeting_to_organise * 2:
         print("Too many meeting for the number of presenters available")
+        print(total_length)
         max_number_of_meeting_to_organise = total_length / 2
 
     # how I organise the meeting
@@ -173,7 +179,7 @@ def work():
                 if len(dates) > 0:
                     el.addDate(dates[0])
                 else:
-                    el.addDate(sqlite3.datetime.datetime.now())
+                    el.addDate(sqlite3.datetime.datetime(1000, 1, 1))
 
     # now I have the time
     # I order the person inside the group per time. The oldest one is the first one
@@ -192,18 +198,35 @@ def work():
     return organize(max_number_of_meeting_to_organise, copy_all_the_groups, mondays)
 
 
-# main
-if __name__ == "__main__":
-
+def submain():
     meetings = work()
-    conn = sqlite3.connect("../../waibase.db")
-    c = conn.cursor()
+
     var = None
     while var == None:
         try:
-            var = input("Do you wann load this meeting into the database? 1 -> yes; 2 ->no: ")
+            var = input("Do you wanna load this meeting into the database? 1 -> yes; 2 ->no: ")
         except:
             print("you entered a wrong character")
+
+    if var == "0":
+        sys.exit()
+
+    while var == 2:
+        print()
+        print("-------- new trial -------")
+        meetings = work()
+        var = None
+        while var == None:
+            try:
+                var = input("Do you wanna load this meeting into the database? 1 -> yes; 2 ->no: ")
+            except:
+                print("you entered a wrong character")
+
+        if var == "0":
+            sys.exit()
+
+    conn = sqlite3.connect("../../waibase.db")
+    c = conn.cursor()
 
     # if i choose to add the meeting -> var = 1
     if var == 1:
@@ -211,7 +234,8 @@ if __name__ == "__main__":
             try:
                 # add the meeting
                 c.execute("INSERT INTO {tn} ({idf}, {cn}) VALUES ('{idfv}', {cnv})". \
-                          format(tn="scheduler_meeting", idf="date", cn="location_id", idfv=el.date.strftime('%Y-%m-%d'), cnv=el.location))
+                          format(tn="scheduler_meeting", idf="date", cn="location_id",
+                                 idfv=el.date.strftime('%Y-%m-%d'), cnv=el.location))
                 # retrieve last id for the presenters
                 c.execute("SELECT MAX(id) FROM scheduler_presentation")
                 res = c.fetchall()
@@ -219,18 +243,38 @@ if __name__ == "__main__":
                 id_i_need_to_use += 1
                 c.execute(
                     "INSERT INTO {tn} ({id}, {meeting_id}, {presenter_id}, slides, title, abstract) VALUES ({id_value}, '{meeting_id_value}', {presenter_id_value},'','','')". \
-                        format(tn="scheduler_presentation", id="id", meeting_id="meeting_id", presenter_id="presenter_id",
+                        format(tn="scheduler_presentation", id="id", meeting_id="meeting_id",
+                               presenter_id="presenter_id",
                                id_value=id_i_need_to_use,
                                meeting_id_value=el.date.strftime('%Y-%m-%d'), presenter_id_value=el.first_presenter.id))
                 id_i_need_to_use += 1
                 c.execute(
                     "INSERT INTO {tn} ({id}, {meeting_id}, {presenter_id}, slides, title, abstract) VALUES ({id_value}, '{meeting_id_value}', {presenter_id_value},'','','')". \
-                        format(tn="scheduler_presentation", id="id", meeting_id="meeting_id", presenter_id="presenter_id",
+                        format(tn="scheduler_presentation", id="id", meeting_id="meeting_id",
+                               presenter_id="presenter_id",
                                id_value=id_i_need_to_use,
-                               meeting_id_value=el.date.strftime('%Y-%m-%d'), presenter_id_value=el.second_presenter.id))
+                               meeting_id_value=el.date.strftime('%Y-%m-%d'),
+                               presenter_id_value=el.second_presenter.id))
             except Exception as e:
                 print(e)
             print("Successfully added meeting")
-
     conn.commit()
     conn.close()
+
+
+# main
+if __name__ == "__main__":
+    CI_id = 289
+    KRR_id = 283
+    SAI_id = 288
+    UCDS_id = 287
+    who_presents = []
+    mondays = []
+    with open("mondays.txt", "r") as ins:
+        for line in ins:
+            date_part = line.replace("\n", "").split(" ")[0]
+            part = date_part.split("-")
+            mondays.append(sqlite3.datetime.datetime(int(part[0]), int(part[1]), int(part[2])))
+            groups = line.replace("\n", "").split(" ")[1].split("-")
+            who_presents.append(groups)
+    meetings = []

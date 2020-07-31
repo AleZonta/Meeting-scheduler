@@ -66,6 +66,7 @@ def getRequestMessage(presenters, date, footer):
     return message
 
 
+
 def getRequestSubject():
     return "WAI - Presenter reminder"
 
@@ -88,3 +89,14 @@ def getNewScheduleMessage(names, footer):
     return message
 
 
+def getNewPersonalScheduleMessage(name, data, names, footer):
+    message = "Dear %s" % name
+    message += "<br><br>"
+    message += "The new WAI schedule is online now. See the <a href = 'http://wai.few.vu.nl/schedule/schedule/2018/'>WAI site</a> for information'\n"
+    message += "If you do not know what WAI is or how it works, see <a href = 'https://wai.few.vu.nl/'>WAI info</a> for information'\n\n"
+    message += "<br>"
+    message += "<b>Your presentation is scheduled to be the  %s</b>\n\n" % data
+    message += "If you are not available, contact a colleague to change slots with, and let %s know so I can update the schedule. \n" % names
+    message += "<br><br>"
+    message += footer
+    return message

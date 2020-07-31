@@ -26,39 +26,44 @@
 					<th>Date</th>
 					<th>First presenter</th>
 					<th>Second presenter</th>
+					<th>Third presenter</th>
 					<th>Room</th>
 				</tr>
 			</thead>
-				{% for meeting in meetings_list %}
-				<tr class="{% cycle 'row1' 'row2' %}" {% if meeting.nextMeeting %}style="background: #FFEB00;"{% endif %}>
-					<td>
-						<a href="../../schedule/{{meeting.date|date:"Y/m/d"}}">{{ meeting.date|date:"d F" }}</a>
-					</td>
-					{% ifequal meeting.presentation_set.count 0 %}
-						<td colspan="2">No presentations</td>
-					{% endifequal %}
-					{% ifequal meeting.presentation_set.count 1 %}
-						{% for presentation in meeting.presentation_set.all %}
-							<td colspan="2">
-							<a href="../../presentation/{{presentation.id}}" title="{{presentation.presenter.group.name}}">{{ presentation.presenter.name }}</a>
-							</td>
-						{% endfor %}
-					{% endifequal %}
-					{% ifequal meeting.presentation_set.count 2 %}
-						{% for presentation in meeting.presentation_set.all %}
+					{% for meeting in meetings_list %}
+					<tr class="{% cycle 'row1' 'row2' %}" {% if meeting.nextMeeting %}style="background: #FFEB00;"{% endif %}>
 							<td>
-							<a href="../../presentation/{{presentation.id}}" title="{{presentation.presenter.group.name}}">{{ presentation.presenter.name }}</a>
+									<a href="../../schedule/{{meeting.date|date:"Y/m/d"}}">{{ meeting.date|date:"d F" }}</a>
 							</td>
-						{% endfor %}
-					{% endifequal %}
-					<td>{{ meeting.location }}</td>
-				</tr>
-				{% endfor %}
-                <tr id="button">
-                   <td colspan="4">
-                       <button type="button" id="mybutton" onclick="repopolate()">Show all the meetings for this year</button>
-                   </td>
-                </tr>
+							{% ifequal meeting.presentation_set.count 0 %}
+									<td colspan="3">No presentations</td>
+							{% endifequal %}
+							{% ifequal meeting.presentation_set.count 1 %}
+									{% for presentation in meeting.presentation_set.all %}
+											<td colspan="3">
+											<a href="../../presentation/{{presentation.id}}" title="{{presentation.presenter.group.name}}">{{ presentation.p$
+											</td>
+									{% endfor %}
+							{% endifequal %}
+							{% ifequal meeting.presentation_set.count 2 %}
+									{% for presentation in meeting.presentation_set.all %}
+											<td>
+											<a href="../../presentation/{{presentation.id}}" title="{{presentation.presenter.group.name}}">{{ presentation.p$
+											</td>
+									{% endfor %}
+											<td></td>
+							{% endifequal %}
+							{% ifequal meeting.presentation_set.count 3 %}
+									{% for presentation in meeting.presentation_set.all %}
+											<td>
+											<a href="../../presentation/{{presentation.id}}" title="{{presentation.presenter.group.name}}">{{ presentation.p$
+											</td>
+									{% endfor %}
+							{% endifequal %}
+
+							<td>{{ meeting.location }}</td>
+					</tr>
+					{% endfor %}
 			</tbody>
 		</table>
 	</div>
@@ -75,21 +80,25 @@
 	</ul>
 	<h3>Other content</h3>
 	<ul class="actionlist">
-		<li class="addlink" style="list-style-type:none;">
-			<a href="../../schedule">Previous schedules</a><br/>
-			<span class="mini quiet">see the schedules back to 2006</span>
-		</li>
-		<li class="addlink" style="list-style-type:none;">
-			<a href="../../group">List of groups</a><br/>
-			<span class="mini quiet">see the speakers sorted by group</span>
-		</li>
-		{% if user.is_authenticated and user.is_staff %}
-		<li class="addlink" style="list-style-type:none;">
-			<a href="../../mailing/send_alert">Send Announcement</a><br/>
-			<span class="mini quiet">send the announcement for the new schedule </span>
-		</li>
-		{% endif %}
-	</ul>
+                <li class="addlink" style="list-style-type:none;">
+                        <a href="../../schedule">Previous schedules</a><br/>
+                        <span class="mini quiet">see the schedules back to 2006</span>
+                </li>
+                <li class="addlink" style="list-style-type:none;">
+                        <a href="../../group">List of groups</a><br/>
+                        <span class="mini quiet">see the speakers sorted by group</span>
+                </li>
+                {% if user.is_authenticated and user.is_staff %}
+                <li class="addlink" style="list-style-type:none;">
+                        <a href="../../mailing/send_alert">Send Announcement</a><br/>
+                        <span class="mini quiet">send the announcement for the new schedule </span>
+                </li>
+                <li class="addlink" style="list-style-type:none;">
+                        <a href="../../mailing/send_custom">Send Custom Email To Everyone</a><br/>
+                        <span class="mini quiet">send a mail to everyone </span>
+                </li>
+                {% endif %}
+        </ul>
 	</div>
 	<div class="module">
 	<h2>Reserve list</h2>
@@ -155,7 +164,6 @@
 		    document.getElementById("button").parentNode.removeChild(document.getElementById("button"))
 		}
 	}
-	window.onload = fix;
 
 	function repopolate() {
 	    if (populate == true){

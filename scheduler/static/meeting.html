@@ -54,27 +54,36 @@
 </div>
 
 <div id="content-related">
-	{% if user.is_authenticated and user.is_staff %}
-	<div class="module">
-	<h2>Actions</h2>
-	<ul class="actionlist">
-		<li class="addlink" style="list-style-type:none;">
-			<a href="../../../../mailing/send_request?id={{meeting.date|date:'Y'}}-{{meeting.date|date:'m'}}-{{meeting.date|date:'d'}}">Request abstracts</a><br/>
-			<span class="mini quiet">ask presenters to send their abstracts</span>
-		</li>
-		<li class="addlink" style="list-style-type:none;">
-			<a href="../../../../mailing/send_announce?id={{meeting.date|date:'Y'}}-{{meeting.date|date:'m'}}-{{meeting.date|date:'d'}}">Announce meeting</a><br/>
-			<span class="mini quiet">announce the content of the next meeting</span>
-		</li>
-		<li class="changelink" style="list-style-type:none;">
-			<a href="../../../../../admin/scheduler/meeting/{{meeting.date|date:'Y'}}-{{meeting.date|date:'m'}}-{{meeting.date|date:'d'}}">Edit meeting</a><br/>
-			<span class="mini quiet">change or add meeting details (abstract/title/slides)</span>
-		</li>
-	</ul>
-	
-	</div>
-	{% endif %}
-</div>
+        {% if user.is_authenticated and user.is_staff %}
+        <div class="module">
+        <h2>Actions</h2>
+        <ul class="actionlist">
+                <li class="addlink" style="list-style-type:none;">
+                        <a href="../../../../mailing/send_request?id={{meeting.date|date:'Y'}}-{{meeting.date|date:'m'}}-{{meeting.date|date:'d'}}">Request abstracts</a$
+                        <span class="mini quiet">ask presenters to send their abstracts</span>
+                </li>
+                <li class="addlink" style="list-style-type:none;">
+                        <a href="../../../../mailing/send_announce?id={{meeting.date|date:'Y'}}-{{meeting.date|date:'m'}}-{{meeting.date|date:'d'}}">Announce meeting</a$
+                        <span class="mini quiet">announce the content of the next meeting</span>
+                </li>
+                <li class="addlink" style="list-style-type:none;">
+                        <a href="../../../../mailing/send_announce_second?id={{meeting.date|date:'Y'}}-{{meeting.date|date:'m'}}-{{meeting.date|date:'d'}}">Announce mee$
+                        <span class="mini quiet">announce the content of the next meeting. Send announcement directly to email avoiding the mailing list</span>
+                </li>
+                <li class="changelink" style="list-style-type:none;">
+                        <a href="../../../../../admin/scheduler/meeting/{{meeting.date|date:'Y'}}-{{meeting.date|date:'m'}}-{{meeting.date|date:'d'}}">Edit meeting</a><$
+                        <span class="mini quiet">change or add meeting details (abstract/title/slides)</span>
+                </li>
+                <li class="addlink" style="list-style-type:none;">
+                        <a href="../../../../mailing/send_ping?id={{meeting.date|date:'Y'}}-{{meeting.date|date:'m'}}-{{meeting.date|date:'d'}}">Send personal alert</a>$
+                        <span class="mini quiet">alert the presenters about their presentation</span>
+                </li>
+        </ul>
+
+        </div>
+        {% endif %}
+</div>y
+
 <script type="text/javascript">
     function fixSecond() {
         var doc = document.getElementById("content-related");

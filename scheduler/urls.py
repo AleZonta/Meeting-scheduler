@@ -1,9 +1,9 @@
 from django.conf.urls import include, url
 from django.conf import settings
 
-from scheduler.views import index, schedule_year, presentations, presentation_detail, schedules, meeting, groups, \
+from views import index, schedule_year, presentations, presentation_detail, schedules, meeting, groups, \
     group_detail, presenters, presenter_detail, schedule_ics, raw_mails, send_request, send_announce, generate, \
-    send_alert
+    send_alert, send_announce_second, send_ping
 
 # Enable the admin
 from django.contrib import admin
@@ -40,7 +40,8 @@ urlpatterns = [
 
     # Mailing export
     url(r'^mailing/send_request/$', send_request),
-    url(r'^mailing/send_announce/$', send_announce),
+    url(r'^mailing/send_announce/$', send_announce_second),
+    url(r'^mailing/send_ping/$', send_ping),
 
     # Account
     url(r'^accounts/login/$', admin.site.urls),
