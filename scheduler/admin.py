@@ -5,8 +5,8 @@ from scheduler.models import Presentation, Group, Room, Presenter, Meeting
 
 class PresentationInline(admin.StackedInline):
     model = Presentation
-    extra = 2
-    max_num = 2
+    extra = 3
+    max_num = 3
 
 
 class GroupAdmin(admin.ModelAdmin):

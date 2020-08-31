@@ -9,19 +9,20 @@ class helper():
         return False
 
     def EMAIL_SENDER(self):
-        return "wai-organization@few.vu.nl"
+        return "wai-organization.few@listserver.vu.nl"
 
 
     def EMAIL_ANOUNCEMENT_RECIPIENTS(self):
-        return ['wai-meetings@few.vu.nl']
+        return ['wai-meetings.few@listserver.vu.nl']
+        #return ['ai.staff.post-docs.phd.students.beta@vu.nl']
 
 
     def EMAIL_REQUEST_ABSTRACT_CC(self):
-        return ['wai-organization@few.vu.nl']
+        return ['wai-organization.few@listserver.vu.nl']
 
 
     def EMAIL_FOOTER(self):
-        return "Best, Alessandro"
+        return "Best, WAI Administrator"
 
     def PRESENTER_NAME(self):
         return "me"
